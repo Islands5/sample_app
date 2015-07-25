@@ -25,6 +25,8 @@ gem 'slim-rails'               # HTMLを簡潔に書ける
 gem 'bootstrap-sass', '3.1.1.0'
 gem 'mongoid-paperclip', github: 'meskyanichi/mongoid-paperclip', require: 'mongoid_paperclip'
 gem 'kaminari'
+gem 'devise'
+gem 'html2slim'
 
 gem 'pry-rails'
 

@@ -1,0 +1,8 @@
+header.navbar-nav.navbar-default.navbar-fixed-top.navbar-inverse.clearfix role="navigation"
+  .container
+    = link_to "Sample app", root_path, id: "logo"
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li = link_to "ホーム",  root_path
+        li = link_to "ヘルプ",  help_path
+        li = link_to "ログイン", new_user_session_path 
