@@ -5,4 +5,8 @@ header.navbar-nav.navbar-default.navbar-fixed-top.navbar-inverse.clearfix role="
       ul.nav.navbar-nav.navbar-right
         li = link_to "ホーム",  root_path
         li = link_to "ヘルプ",  help_path
-        li = link_to "ログイン", new_user_session_path 
+        - if user_signed_in?
+          li = link_to "ログアウト", destroy_user_session_path
+        - else
+          li = link_to "ログイン", new_user_session_path 
+
