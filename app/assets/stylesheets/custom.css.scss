@@ -143,7 +143,14 @@ input {
 
 .actions {
   margin-top: 10px;
-  width:100px;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+.delete-account {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
 }
 
 /* flash */
@@ -173,4 +180,19 @@ input {
   border-color: #d6e9c6;
   color: #468847;
   text-align: center; 
+}
+
+/* users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
 }

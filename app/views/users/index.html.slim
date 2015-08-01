@@ -1,0 +1,9 @@
+- provide(:title, 'All users')
+h1
+  .users
+    - @users.each do |user|
+      li
+        = gravatar_for user
+        = link_to user.name, user
+
+= paginate @users
