@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   before_action :correct_user, only: [:show]
 
   def show
+    @user = User.where(:id => params[:id]).first
+    @microposts = @user.microposts.page(params[:page]).per(10)
   end
 
   def index

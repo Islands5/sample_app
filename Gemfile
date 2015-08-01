@@ -33,6 +33,7 @@ gem 'pry-rails'
 # 開発環境
 gem 'pry-byebug'             # pryでデバックコマンドが使える
 gem 'pry-doc'
-gem 'rspec'
-gem 'rspec-rails'
+gem 'rspec-rails', '~> 3.1.0'
+gem 'mongoid-rspec'
 gem 'capybara'
+gem 'factory_girl_rails', '~> 4.4.1'
