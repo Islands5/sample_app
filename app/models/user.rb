@@ -44,4 +44,8 @@ class User
   has_and_belongs_to_many :follow, class_name: 'User', dependent: :destroy
   has_and_belongs_to_many :followed, class_name: 'User', dependent: :destroy
   has_many :microposts, dependent: :destroy
+
+  def feed
+    microposts
+  end
 end
