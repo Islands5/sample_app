@@ -46,6 +46,7 @@ class User
   has_many :microposts, dependent: :destroy
 
   def feed
-    microposts
+    return [] if microposts.nil?
+    return microposts 
   end
 end
